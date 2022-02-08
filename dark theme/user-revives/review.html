@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>slider</title>
+        <link rel="stylesheet" href="./style2.css">
+
+        <link rel="stylesheet" href="C:\Users\lngow\OneDrive\Desktop\dark theme\front page\style.css">
+
+
+    </head>
+    <body>
+
+
+        <nav>
+            <a href="file:///C:/Users/lngow/OneDrive/Desktop/dark%20theme/front%20page/index.html"><img src="C:\Users\lngow\OneDrive\Desktop\dark theme\front page\L.N-removebg-preview.png" class="logo"></a>
+            <ul>
+                <li><a href="file:///C:/Users/lngow/OneDrive/Desktop/dark%20theme/front%20page/index.html">HOME</a></li>
+                <li><a href="file:///C:/Users/lngow/OneDrive/Desktop/dark%20theme/user-revives/review.html">ABOUT</a></li>
+                <li><a href="file:///C:/Users/lngow/OneDrive/Desktop/dark%20theme/srvices/service.html">SERVICES</a></li>
+                <li><a href="file:///C:/Users/lngow/OneDrive/Desktop/dark%20theme/login/register.html">REGISTER</a></li>
+                <li><a href="file:///C:/Users/lngow/OneDrive/Desktop/dark%20theme/contact2/newcontact.html">CONTACT</a></li>
+    
+            </ul>
+            <img src="C:\Users\lngow\OneDrive\Desktop\dark theme\front page\moon.png" id="icon">
+        </nav>
+
+
+
+        <div class="hero">
+
+            <h1>COUSTOMER REVIEWS</h1>
+            <div class="review-box">
+                <div id="slid">
+                    <div class="card">
+                        <div class="profile">
+                        
+                        <div>
+                      <h2>OUR COMPANY</h2>
+                    </div>
+
+                    </div>
+
+                        <p>During the review, it’s important to pay special attention to user accounts of employees who have worked in the organization for a long time, recently changed their position, acquired new responsibilities, or left the company.</p>
+                    <p>Privilege creep. Privilege creep happens when employees obtain access to lots of sensitive data during the time they work at an organization. New privileges appear when employees gain new responsibilities and access rights, </p>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="profile">
+                        <img src="./pic2.jpg">
+                        <div>
+                        <h3>narayan</h3>
+                        <p>web designer</p>
+                    </div>
+                    </div>
+
+                        <p>Employees usually see cybersecurity measures as interfering with their daily work. By involving employees in the review, you can speed up the process and show them why it’s important. For example, you can send out lists of access rights to users and their managers and ask them to point out what resources they no longer need to access.</p>
+                    
+                    </div>
+
+
+
+                    <div class="card">
+                        <div class="profile">
+                        <img src="./pic3.jpg">
+                        <div>
+                        <h3>Yuva</h3>
+                        <p>web designer</p>
+                    </div>
+                    </div>
+
+                        <p>Communicating with employees is vital for cybersecurity. If employees don’t understand why it’s important to implement a certain practice or use a specific tool, there’s a high chance they’ll find a way not to comply. That’s why you need to communicate the principles and importance of access management to your employees during cybersecurity training.</p>
+                    
+                    </div>
+
+
+                    <div class="card">
+                        <div class="profile">
+                        <img src="./pic4.jpg">
+                        <div>
+                        <h3>Dinesh</h3>
+                        <p>web designer</p>
+                    </div>
+                    </div>
+
+                        <p>
+                            This principle dictates that users should have access to data only if they absolutely need it. The fewer privileges a user has, the less time you need to spend reviewing them. The principle of least privilege is required by security standards we’ve discussed earlier.</p>
+                    
+                    </div>
+
+
+                </div>
+                <div class="side-bar">
+                    <img src="./up-arrow.png" id="upArrow">
+                    <img src="./down-arrow.png" id="downArrow">
+
+                </div>
+
+            </div>
+        </div>
+
+
+<script>
+var slid = document.getElementById('slid')
+var upArrow = document.getElementById('upArrow')
+var downArrow = document.getElementById('downArrow')
+
+let x =0;
+
+upArrow.onclick = function()
+{
+   if(x > -900)
+   {
+    x = x-400;
+    slid.style.top = x + "px";
+   } 
+}
+
+
+downArrow.onclick = function()
+{
+   if(x <= 1)
+   {
+    x = x + 400;
+    slid.style.top = x + "px";
+   } 
+}
+
+
+
+
+
+</script>
+
+
+    </body>
+</html>
